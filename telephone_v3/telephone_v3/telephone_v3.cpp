@@ -1,7 +1,15 @@
-﻿#include <iostream>
+﻿#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include "telephone.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+	telephone telephone;
 
+	telephone.init_directory();
+	telephone.process_command();
+
+	return 0;
+}
